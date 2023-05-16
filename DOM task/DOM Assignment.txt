@@ -1,0 +1,64 @@
+Question no 1:
+How can we access HTML elements using DOM in javascript?
+
+1.By id name
+const element = document.getElementById('elementId');
+2.By class name
+const element = document.getElementByClassName('elementClassName');
+3.By tag name
+const element = document.getElementsByTagName('elementTagName');
+4.By css selector
+const element = document.querySelector('elementCssSelector');
+
+Question no 2:
+what are the activities that we can perform using DOM?
+Using the Document Object Model (DOM) in JavaScript, you can perform various activities 
+to interact with HTML elements and manipulate web pages.
+
+1. Accessing and Modifying Elements:
+   - Retrieve HTML elements by their ID, class name, tag name, or CSS selector.
+   - Change the content of elements, such as text, HTML, or attributes.
+   - Modify CSS styles and classes of elements.
+   - Add, remove, or toggle classes on elements.
+   - Get or set the values of form inputs and other interactive elements.
+
+2. Manipulating Element Structure:
+   - Create new HTML elements dynamically.
+   - Append, prepend, or insert elements into other elements.
+   - Remove or replace elements.
+
+3. Handling Events:
+   - Attach event listeners to elements to respond to user interactions like clicks,
+    key presses, or mouse movements.
+   - Capture and handle events at different phases (capturing, target, bubbling).
+
+Question no 3
+
+What are Event-Listeners in DOM?
+
+Event listeners in the Document Object Model (DOM) are functions that are attached to HTML elements
+ and respond to specific events triggered by user interactions or other actions. An event listener 
+ "listens" for events on an element and executes a designated function when the event occurs. It 
+ allows you to create interactive web pages by responding to user actions.
+
+Here's how event listeners work in the DOM:
+
+1. Attaching Event Listeners:
+   - You select an HTML element using DOM methods like `getElementById`, `querySelector`, etc.
+   - You use the `addEventListener` method on the selected element to attach an event listener.
+   - The method takes two parameters: the event type and the callback function to be executed when the event occurs.
+
+2. Event Types:
+   - Event types can be things like clicks, mouse movements, key presses, form submissions, and more.
+   - Some common event types include 'click', 'mouseover', 'keydown', 'submit', etc.
+   - You can attach multiple event listeners to the same element for different event types.
+
+3. Callback Functions:
+   - The callback function is the code that gets executed when the specified event occurs.
+   - It can be an anonymous function or a named function.
+   - The function typically receives an event object as a parameter, which contains
+    information about the event (e.g., target element, event type, etc.).
+   - Inside the callback function, you can perform actions like manipulating elements, 
+   modifying styles, updating data, or triggering other functions.
+   - Event listeners are commonly used to respond to user interactions.
+
