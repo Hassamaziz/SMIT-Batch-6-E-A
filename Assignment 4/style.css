@@ -1,0 +1,129 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem 1rem 2rem;
+
+
+  }
+  .right a:hover{
+    color: brown;
+  }
+  .right a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  .left h1{
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h1{
+    font-size: 3rem;
+    
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .text{
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+  }
+  ul{
+    margin-left: 25%;
+   text-align: left;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .right-logo{
+    margin-left: 5%;
+  }
+  .eyes{
+align-content: center;
+   align-items: center;
+   padding-left: 47%;
+   margin-top: -3%;
+
+  }
+ 
+  #images{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 25px;
+    
+    
+  }
+  button{
+    border: transparent;
+    padding: 12px;
+    background-color:black;
+    color: white;
+    border-radius: 8px;
+  }
+  .sign-up{
+    border-top: solid 3px  black ;
+    
+    padding-bottom: 30px;
+   height: 450px;
+   width: 680px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    
+  }
+  a:hover{
+    color: blue;
+  
+  }
+  #footer{
+    background-color: black;
+    color: white;
+    border: transparent solid;
+    border-top: 10%;
+    border-bottom: 10%;
+    height: 400px;
+    padding-top: 50px;
+ 
+    
+
+  }
+
+  .links{
+    display: flex;
+    justify-content: center;
+    justify-content:space-evenly;
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .carditem:hover{
+    transition: 1.2s;
+background-color: white;
+box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+-webkit-box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+-moz-box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+transform: scale(1.1);
+
+}
