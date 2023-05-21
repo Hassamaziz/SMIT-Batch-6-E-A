@@ -1,0 +1,186 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(static/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: face;
+    src: url(static/static/PlayfairDisplay-Black.ttf);
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  
+  @media only screen and (max-width: 576px) {
+    html {
+      font-size: 35%;
+    }
+    .logo {
+      width: 20rem;
+    }
+  }
+  @media only screen and (min-width: 576px) and (max-width: 769px) {
+    html {
+      font-size: 40%;
+    }
+    .logo {
+      width: 20rem;
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    html {
+      font-size: 50%;
+    }
+    .logo {
+      width: 18rem;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    html {
+      font-size: 60%;
+    }
+    .logo {
+      width: 18rem;
+    }
+  }
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem 1rem 2rem;
+    }
+    .links a{
+        margin-left: 4%;
+       border-bottom: #4BA87D solid 5px;
+       padding-left: 1rem;
+       padding-right: 1rem;
+       padding-top: 1rem;
+       font-size: 15px;
+       font-family: Raleway ;
+        text-decoration: none;
+        color: black; 
+    }
+    .links a:hover{
+      background-color: #4BA87D;
+      color: white;
+      transition: 0.3s ease-in;
+    }
+
+    .links button{
+        background-color: #4BA87D;
+        color: white;
+        font-family: Raleway;
+        border: transparent;
+        border-radius: 4px;
+        padding: 5px 15px 5px 15px;
+        margin-left: 3%;
+    }
+    .links button:hover{
+      background-color: white;
+      color: #4BA87D;
+      transition: 0.5s ease-in;
+
+    }
+    .background1{
+       width: 100%;
+       height: 80vh;
+        background-image: url(Assets/BG\ stuff.png);
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: center;
+       
+    }
+  .btn1{
+    margin-right: 4%;
+    padding: 10px 30px 10px 30px;
+    border: transparent;
+    background-color: #4BA87D;
+    color: white;
+    font-family: Raleway;
+  }
+  .btn2{
+    margin-right: 4%;
+    padding: 8px 30px 8px 30px;
+    border: solid 2px #4BA87D;
+    margin-top: 3rem;
+
+    background-color:white ;
+    color: #4BA87D;
+    font-family: Raleway;
+  }
+  
+  .background2{
+    background-image: url(Assets/background2.png);
+    background-repeat: no-repeat;
+  }
+   .banner{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+   }
+   .banner img{
+    width: 100%;
+   }
+   .heading{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+   }
+   .heading2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+   }
+   .carditem{
+    border: transparent;
+    height: 50%;
+    margin-left: 2rem;
+   }
+   .carditem:hover{
+    transition: 0.7s;
+    background-color: white;
+  box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+  transform: scale(1.1);
+   }
+   .Member:hover{
+    transition: 1s;
+    background-color: white;
+  box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -4px 8px 20px -6px rgba(0, 0, 0, 0.16);
+  transform: scale(1.1);
+   }
+ .form{
+  border: solid black 1px;
+  height: 3rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+ }
+ .img{
+  margin-left: 3rem;
+  width: 6rem;
+  margin-bottom: 2rem;
+ }
+ .background3{
+  background-image: url(Assets/GetStarted_Box.png);
+ }
+ .col ul li{
+  list-style: none;
+  font-family: Raleway;
+ }
+ .row p{
+  font-family: Raleway;
+ }
+ button:hover{
+  transition: 0.3s ease-in;
+  
+  color: black;
+  background-color: rgb(237, 234, 234);
+ }
+ 
