@@ -1,0 +1,61 @@
+
+.getAquote{
+    background-color: orangered;
+    color: white;
+    
+}
+#COLOR{
+        background-color:lightsteelblue;
+        
+}
+#Contact{
+        min-width: 80%;
+        border:transparent;
+        border-bottom: double;
+}
+button{
+    margin: 20px 10px;
+    background-color: orangered;
+    color: white;
+    border: transparent;
+   padding: 10px 40px;
+   border-radius: 3px;
+}
+.welcome{
+    font-size: 400%;
+    font-display:bold ;
+}
+h3{
+    color: orangered;
+}
+.col-3{
+    background-color: lightgrey;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 60px;
+}
+.blackbutton{
+    background-color: black;
+    border: transparent;
+    padding: 10px 40px;
+    
+}
+.image{
+    margin: 10px;
+}
+footer{
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: transparent;
+    margin: 20px;
+}
+.hassam{
+    background-color: lightgray;
+ margin: 15px;
+}
+#home{
+    position: sticky;
+    top: 0px;
+    
+}
