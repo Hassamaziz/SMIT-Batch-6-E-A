@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+.calculator {
+padding: 10px;
+border-radius: 1em;
+height: 620px;
+width: 500px;
+margin: auto;
+background-color: #191b28;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+font-family: 'Oswald';
+background-color: #dcdbe1;
+border: solid black 0.5px;
+color: black;
+border-radius: 5px;
+width: 100%;
+height: 55%;
+}
+#opbtn{
+    background-color: gray;
+}
+
+#opbtn2{
+    background-color:crimson;
+}
+#opbtn2:hover{
+    cursor:pointer;
+    background-color:#dcdbe1;
+    color: #191b28;
+}
+
+#opbtn:hover{
+    cursor:pointer;
+    background-color:#dcdbe1;
+    color: #191b28;
+}
+#btn {
+background-color: darkred;
+}
+#btn:hover{
+    
+        cursor:pointer;
+        background-color:cadetblue;
+        color: #191b28;
+    
+}
+#btn1{
+    background-color: green;
+}
+#btn1:hover{
+
+        cursor:pointer;
+        background-color:#dcdbe1;
+        color: #191b28;
+    
+}
+
+#btn2{
+width: 40px;
+
+
+}
+input[type=button] {
+font-family: 'Oswald';
+background-color: #64278f;
+color: white;
+border: solid black 0.5px;
+width: 100%;
+font-size: larger;
+border-radius: 5px;
+height: 60%;
+outline: none;
+}
+
+
+
+input:hover[type=button] {
+    cursor:pointer;
+    background-color:#c1c1c1;
+    }
+
+
