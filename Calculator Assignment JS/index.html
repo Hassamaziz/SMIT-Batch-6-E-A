@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>My Calculator</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+ <center> <div class="container1">
+   
+  <center> <table> <tr>
+  <td width="400"
+  height="50">
+    <input class="display-box" placeholder="0" type="text" id="result" disabled />
+  </td>
+  <td width="100">
+    <input type="button" value="Clear" onclick="clearScreen()" id="btn" />
+  </td>
+  </tr></table>
+</center>
+  <div id="info">
+<table class="calculator">
+
+<tr>
+  <td colspan="2">
+    <button onclick="toggleCalculator()" class="toggle-button">
+      <i style="font-size: x-large; width: 4rem;" class="fas fa-toggle-off"></i>
+    </button>
+  </td>
+ 
+  <td>
+  </td>
+  <td>
+  </td>
+  
+</tr>
+
+
+<tr>
+
+<td>
+  <input type="button" value="1" onclick="display('1')" />
+</td>
+<td>
+  <input type="button" value="2" onclick="display('2')" />
+</td>
+<td>
+  <input type="button" value="3" onclick="display('3')" />
+</td>
+<td>
+  <input type="button" value="&larr;" onclick="deleteLastCharacter()" id="btn" />
+</td>
+</tr>
+<tr>
+<td>
+  <input type="button" value="4" onclick="display('4')" />
+</td>
+<td>
+  <input type="button" value="5" onclick="display('5')" />
+</td>
+<td>
+  <input type="button" value="6" onclick="display('6')" />
+</td>
+<td>
+  <input type="button" value="-" onclick="display('-')" id="opbtn" />
+</td>
+
+</tr>
+<tr>
+<td>
+  <input type="button" value="7" onclick="display('7')" />
+</td>
+<td>
+  <input type="button" value="8" onclick="display('8')" />
+</td>
+<td>
+  <input type="button" value="9" onclick="display('9')" />
+</td>
+<td>
+  <input type="button" value="+" onclick="display('+')" id="opbtn" />
+</td>
+
+</tr>
+<tr>
+  <td>
+    <input type="button" value="=" onclick="calculate()" id="btn1"  />
+  </td>
+ 
+  <td>
+    <input type="button" value="0" onclick="display('0')" />
+  </td>
+<td>
+  <input type="button" value="." onclick="display('.')" />
+</td>
+<td>
+  <input type="button" value="*" onclick="display('*')" id="opbtn" />
+</td>
+</tr>
+
+
+</table>
+</div>
+
+
+
+
+<!-- second page  -->
+
+
+
+
+
+<div id="info2" class="hidden">
+  <table class="calculator">
+  
+  <tr>
+   <center> <td colspan="2">
+      <button onclick="toggleCalculator()" class="toggle-button">
+        <i  style="font-size: x-large; width: 6rem; height: 1rem;"  class="fas fa-toggle-on"></i>
+      </button>
+    </td></center>
+   
+    <td>
+      <input type="button" value="Mod" onclick="handleOperator('%')" id="opbtn2" />
+    </td>
+    <td>
+      <input type="button" value="^" onclick="handleOperator('**')" id="opbtn2" />
+    </td>
+    
+  </tr>
+  <tr>
+  
+  <td colspan="2">
+    <input type="button" value="sin" onclick="calcTrigono('sin')" id="opbtn2" />
+  </td>
+  <td width="120">
+    <input type="button" value="cos" onclick="calcTrigono('cos')" id="opbtn2" />
+  </td>
+  <td>
+    <input type="button" value="tan" onclick="calcTrigono('tan')" id="opbtn2" />
+  </td>
+  </tr>
+  <tr>
+  
+    <td colspan="2">
+      <input type="button" value="π" onclick="display('Math.PI')" id="opbtn2" />
+    </td>
+    <td>
+      <input type="button" value="√" onclick="calculateSquareRoot()" id="opbtn2" />
+    </td>
+    <td>
+      <input type="button" value="log" onclick="calculateLogarithm()" id="opbtn2" />
+    </td>
+    </tr>
+  <tr>
+ 
+  <td>
+    <input type="button" value="1" onclick="display('1')" />
+  </td>
+  <td>
+    <input type="button" value="2" onclick="display('2')" />
+  </td>
+  <td>
+    <input type="button" value="3" onclick="display('3')" />
+  </td>
+  <td>
+    <input type="button" value="&larr;" onclick="deleteLastCharacter()" id="btn" />
+  </td>
+  </tr>
+  <tr>
+  <td>
+    <input type="button" value="4" onclick="display('4')" />
+  </td>
+  <td>
+    <input type="button" value="5" onclick="display('5')" />
+  </td>
+  <td>
+    <input type="button" value="6" onclick="display('6')" />
+  </td>
+  <td>
+    <input type="button" value="-" onclick="display('-')" id="opbtn" />
+  </td>
+  </tr>
+  <tr>
+  <td>
+    <input type="button" value="7" onclick="display('7')" />
+  </td>
+  <td>
+    <input type="button" value="8" onclick="display('8')" />
+  </td>
+  <td>
+    <input type="button" value="9" onclick="display('9')" />
+  </td>
+  <td>
+    <input type="button" value="+" onclick="display('+')" id="opbtn" />
+  </td>
+  </tr>
+  <tr>
+  <td>
+    <input type="button" value="." onclick="display('.')" />
+  </td>
+  <td>
+    <input type="button" value="0" onclick="display('0')" />
+  </td>
+  <td>
+    <input type="button" value="=" onclick="calculate()" id="btn1"  />
+  </td>
+  <td>
+    <input type="button" value="*" onclick="display('*')" id="opbtn" />
+  </td>
+  </tr>
+  
+  
+  </table>
+  </div>
+  </div></center>
+
+<script src="script.js"></script>
+
+</body>
+</html>
