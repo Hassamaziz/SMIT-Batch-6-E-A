@@ -1,0 +1,9 @@
+.btnStyle{
+    width: 12rem;
+    height: 20%;
+}
+
+.border{
+    border: 10px solid darkblue;
+    border-radius: 10%;
+}
